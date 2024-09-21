@@ -1,4 +1,4 @@
-package internal
+package prime
 
 func IsPrime(n int) bool {
 	if n == 1 || n == 2 {
