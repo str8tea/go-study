@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/str8tea/go-study/prime"
 )
 
 func main() {
 	for i := 0; i < 100; i++ {
-		if i%2 == 0 {
-			fmt.Printf("%d-偶数\n", i)
-		} else {
-			fmt.Printf("%d-奇数\n", i)
+		if prime.IsPrime(i) {
+			fmt.Printf("%d-素数\n", i)
 		}
 	}
 }
